@@ -1,0 +1,389 @@
+
+body, html {
+    margin: 0;
+}
+
+#p1{
+position: relative;
+color: rgb(96, 94, 94);
+top: 8px;
+margin-left: 80px    ;
+font-size: x-small;
+font-family: Helvetica, sans-serif;
+}
+
+
+#thyme{
+position: relative;
+color: rgb(188,155,93);
+font-family: Helvetica, sans-serif;
+font-size: 35px;
+font-weight: 100;
+text-align: center;
+top: 10px;
+letter-spacing: 0.2em;
+}
+
+
+
+.hr{
+    width: 655px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.42);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.nav{
+    padding-left: 24px;
+    line-height: 30px;
+}
+
+
+
+
+.nav a {
+    margin-left: 65px;
+    text-decoration: none;
+    font-size: x-small;
+    font-family: Helvetica, sans-serif;
+    color: rgb(96, 94, 94);
+
+
+}
+
+
+.nav a:first-of-type{
+ color:  rgb(188,155,93); 
+    
+}
+
+
+/*
+.nav a:link{
+        	color: rgb(96, 94, 94);
+
+}
+*/
+
+
+/*
+.nav a:visited{
+    	color: rgb(96, 94, 94);
+}
+*/
+
+
+/*
+.nav a:hover{
+    color:rgb(188,155,93);
+}
+*/
+
+
+/*
+.nav a:active{
+	color:rgb(188,155,93);
+}
+*/
+
+
+.homepage{
+width:1060px;
+overflow: hidden;
+
+}
+
+.parallax {
+      
+    background: url("http://cs-server.usc.edu:45678/hw/hw3/images/image6.jpg") 51% 65px;
+    width:655px;
+    height: 360px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    object-fit: contain;
+    margin-bottom: 16px;
+    
+    
+}
+
+
+#p2{
+    color: rgb(96, 94, 94);
+    font-size: small;
+    float:left;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+     width: 700px;
+}
+
+#restaurant{
+    color: rgb(96, 94, 94);
+    font-size: 0.45em;
+    letter-spacing: 0.2em;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Local{
+    color: rgb(188,155,93);
+    letter-spacing: 0.03em;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    float:right;
+    font-style: italic;
+}
+
+
+.Pineapple{
+    color: rgb(96, 94, 94);
+    letter-spacing: 0.02em;
+    margin-top: 5px;
+    line-height: 15px;
+    font-size: 0.50em;
+    float:right;
+    font-weight: normal;
+    font-family: "Arial", Helvetica, sans-serif;
+    font-style: normal;
+
+}
+
+
+
+
+.image_3
+{
+    margin-top: 60px;;
+    margin-left: 65px;
+    float:left;
+    padding-bottom: 20px;
+    width: 255px;
+    height: 305px;
+    
+
+}
+
+.image_2 {
+    margin-left: 65px;
+    float: left;
+    clear: left;
+    width: 255px;
+    height: 155px;
+
+}
+
+.image_1 {
+    margin-right: 100px;
+    margin-top: 43px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 260px;
+    height: 180px;
+    
+}
+
+.image_4 {
+    width:260px;
+    height:280px;
+    margin-right: 100px;
+}
+
+    
+.freshest
+{
+    color: rgb(188,155,93);
+    margin-left: 70px;
+    margin-top: 40px;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    float:left;
+    font-style: italic;
+}
+
+.support
+{
+    color: rgb(96, 94, 94);
+    letter-spacing: 0.02em;
+    margin-top: 5px;
+    line-height: 15px;
+    font-size: 0.50em;
+    float:left;
+    font-family: "Arial", Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.Pineapple a {
+    color: rgb(96, 94, 94);
+    font-size:x-small;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+.Pineapple a:link{
+    	color: #2F2E2E;
+}
+
+
+.Pineapple a:visited{
+    	color: #2F2E2E;
+}
+
+.Pineapple a:hover{
+    color:#C0C0C0;	
+}
+
+
+
+.freshest a {
+    color: rgb(96, 94, 94);
+    font-size:x-small;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+.freshest a:link{
+    	color: #2F2E2E;
+}
+
+
+.freshest a:visited{
+    	color: #2F2E2E;
+}
+
+.freshest a:hover{
+    color:#C0C0C0;	
+}
+
+
+
+
+.image_7
+{
+    padding-top: 2em;
+    padding-left: 63px;
+    height:370px;
+    width:538px;
+}
+
+
+.textblock {
+    position: relative;
+    bottom: 235px;
+    right: 18px;
+    background-color: white;
+    color: black;
+    margin: auto auto;
+    padding-top: 3%;
+    width: 225px;
+    height: 5.0em;
+    text-align: center;
+}
+
+#tbgreen{
+    color: rgb(96, 94, 94);
+    letter-spacing: 0.15em;
+    line-height: 0.4em;
+    font-size: 7.5px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+#tborder{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;   
+    font-size: large;
+    line-height: 0.3em;
+
+}
+
+.salad a {
+    text-decoration: none;
+}
+
+.salad a:link{
+color: rgb(96, 94, 94);
+}
+
+.salad a:visited{
+color: rgb(96, 94, 94);
+}
+
+.salad a:hover{
+    color:#C0C0C0;	
+}
+
+
+
+#green{
+    margin-top: -50px;
+    color: rgb(96, 94, 94);
+    letter-spacing: 0.2em;
+    font-family: Helvetica, sans-serif;
+    font-size: 7px;    
+    text-align: center;
+    margin-right: 25px;
+}
+
+
+#loved
+{
+    position: relative;
+    color: rgb(188,155,93);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-align:center;
+    padding-right: 30px;
+    font-style: italic;
+    margin-top: -4px;
+    margin-bottom: 40px;
+}
+
+.container2:{
+    height: 1098px;
+    width: 1060px;
+}
+
+.para{
+
+    left:0px;
+    height: 350px;
+    width:655px;
+    position: relative;
+    background: url(http://cs-server.usc.edu:45678/hw/hw3/images/image5.jpg) 0 100px; 
+    overflow: hidden;
+    background-size:655px 600px;
+    object-fit: contain;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+  }
+
+.last {
+    position: relative;
+    left: 0px;
+    top: -100px;
+    padding-top: 5px;
+    background-color: rgb(188,155,93);
+    font-family: Helvetica, sans-serif;
+    color: white;
+    width:250px;
+    padding-left: 405px;
+    height: 9.5em;
+    
+}
+
+
+#lastext{
+    font-size: 10px;
+    text-align: justify;
+}

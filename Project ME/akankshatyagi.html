@@ -1,66 +1,135 @@
 <!DOCTYPE HTML>
-
 <HTML>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <Style>
         body,html {
             height: 100%;
+            font-family: Trebuchet MS, sans-serif;     
+                        word-spacing: 0.2rem;
+
+
         } 
         
+        #location{
+            font-size: 1.5rem;
+        }
         #myPhoto {
+            display: block;
             background-image: url(myPhoto.JPG);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            width: 50%;
+            background-attachment: fixed;
+            width: 80%;
             height: 100%;
-            float: right;
+            opacity: 0.9;
+            text-align: center;
+            color:ghostwhite;
+            font-style: italic;
+            font-size:2.3rem;  
+            margin: auto;
             }
-        
-        #topLeft{
-            float:left;
-            background-color: cadetblue;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 50%;
-            height: 100%;
-            padding-top: 40px;
-        }
-        
-        #nav a:link, a:visited {
-                background-color: cornsilk;
-                color: black;
-                width: 80%;
-                height: 100px;
-                text-align: center;
-                margin-left: 10%;
-                margin-top: 30px;
+                
+        .button {
+            background-color: dimgray; /* Green */
+            border: none;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.0rem;
+            margin: 2% 2%;
+            cursor: pointer;
 
-                vertical-align: middle;
-/*                padding: 14px 25px;*/
-                text-decoration: none;
-                margin-bottom: 30px;
-                display: inline-block;
-            }
         }
+        
+        .button a:link, a:visited{
+        text-decoration: none;
+            color: ghostwhite;
+
+        }
+
+        .contactInfo a:link{
+            font-style: italic;
+            font-size: 1.0rem;
+            text-decoration: none;
+            color: ghostwhite;
+            
+        }
+        
+        #hr1,#hr2{
+            width: 50%;
+        }
+        
+        #a1{
+        margin-top: 5%;
+
+        text-align: center;
+        }
+
+        #bio{
+            text-align: center;
+            line-height: 2.0rem;
+            width: 80%;
+            margin-left: 10%;
+            color: black;
+        }
+        
+        #bio a:link, a:visited{
+            color: black;
+        }
+        #a2{
+            margin-top: 5%;
+/*             color:black;*/
+            text-align: center;
+        }
+        
+        #Master {
+            text-align: center;
+            line-height: 2.0rem;
+            width: 80%;
+            margin-left: 10%;
+            
+        }
+        }
+
     </Style>
+    
     <HEAD>
-        <Title> I'm Akanksha Tyagi </Title>
+        <Title>Homepage - Akanksha Tyagi </Title>
 
     </HEAD>
     <BODY>
-        <div id="topLeft">
-        <div id = "nav">    
-        <a href="" target="_blank">ABOUT ME</a> <br>
-        <a href="" target="_blank">EDUCATION</a><br>
-        <a href="" target="_blank">PROJECTS</a><br>
-        <a href="" target="_blank">CONTACT</a><br>
-        </div>
-        </div>
+
         <Div id="myPhoto">
+        <br>
+        <b>Graduate Student, Developer<br>
+            <span id="location">Los Angeles,CA</span></b>     
+        <br>
+        <button class="button button1"><a href="#contactInfo">Connect</a></button>
+        <button class="button button2">Portfolio</button>            
         </Div>
+        
+        <div class="AboutMe">
+        <h2 id="a1">About</h2>
+        <hr id="hr1">
+            
+        <p id="bio">I am Akanksha Tyagi, a graduate student at University of Southern California. I find joy in coding and love discussing topics about programming. I have worked on a variety of projects based on Deep Learning, Operating System and Web Technologies. In my free time, I like learning and exploring new technologies. If there is anything related to programming or software development that you would like to discuss, feel free to <a href="#contactInfo">contact me</a>. 
+        </p>
+        </div>
+
+        <div class="Education">
+        <h2 id="a2">Education</h2>
+        <hr id="hr2">
+            <p id="Master"><b>University of Southern California, Los Angeles</b>: Master's in Computer Science, <i> GPA: 3.57 </i>
+                <br><b>University of Pune, Pune</b>: Bachelor of Engineering in Computer Science, <i>passed with First Class with Distinction</i></p>
+        </div>
+        
+        <div class="contactInfo">
+            <a href="">LinkedIn</a>
+            <a href="">Github</a>
+        </div>
 
     </BODY>
 </HTML>

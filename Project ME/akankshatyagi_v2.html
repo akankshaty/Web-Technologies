@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+    <title>Personal Homepage - Akanksha Tyagi</title>
+<!--
+-->
+    <script>       
+        function divVisibility(divId) {
+            var x = document.getElementById(divId);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+
+        var sizeTheOverlays = function() {
+        $(".overlay").resize().each(function() {
+        var h = $(this).parent().outerHeight();
+        var w = $(this).parent().outerWidth();
+        $(this).css("height", h);
+        $(this).css("width", w);
+        });
+        };
+
+        sizeTheOverlays();
+
+
+        var width = $(window).width();
+        $(window).resize(function(){
+        if($(this).width() != width){
+        width = $(this).width();
+        sizeTheOverlays();
+        }
+        });
+
+
+
+        
+      </script>
+      
+      <style>
+          html,
+            body {
+                background-color: white;
+/*                background-image: linear-gradient(to right,#3773ff, #37ffc3);*/
+/*                background-repeat: no-repeat;*/
+/*                background-blend-mode: color-burn;*/
+/*                    #D7E1EB;*/
+/*                #2E3373*/
+/*
+            background-image:
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 20px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+            radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+*/
+              height: 100%;
+                background-size: cover;
+/*                background-color: darkturquoise;*/
+              font-family: PT Sans, sans-serif;
+/*                letter-spacing: 0.2rem;*/
+            }
+            body {
+              color: black;
+              text-align: center;
+            }
+            .Name{
+                font-size: 4.5rem;
+/*                margin-bottom: 30px;*/
+                text-shadow: 0 0 5px white;
+/*                color: wheat;*/
+/*              background:   linear-gradient(to right, rgb(255,200,200), rgb(255,80,0), rgb(255,200,200)); */
+                letter-spacing: 0.2rem;
+                font-weight: 0.5rem;
+                animation-name: topFadeOut;
+                animation-duration: 5s;
+            }
+            .Intro{
+                font-size: 1.3rem;
+                line-height: 1rem;
+                margin-top: 30px;
+                margin-bottom: 45px;
+                animation-name: topFadeOut;
+                animation-duration: 5s;
+                text-shadow: 0 0 5px white;
+                letter-spacing: 0.2rem;
+
+
+            }
+
+                    
+          .bg-1 {
+              width: 300px;
+              height: 275px;
+              overflow:hidden;
+/*              background-color: tan;*/
+              margin-top: 100px;
+            }
+            .bg-1 img {
+              height: 100%;
+              min-width: 100%;
+              left: 50%;
+              position: relative;
+              transform: translateX(-50%);
+            }
+          
+          
+          hr { 
+              border : 0;
+              height: 1px; 
+              width: 30%;
+/*              margin-top: -10%;*/
+              background-image: linear-gradient(to right, rgb(255,200,200), rgb(255,80,0), rgb(255,200,200)); 
+            }
+          .bg-2 a:link, a:visited{
+              text-decoration: none;
+              color: black;
+          }
+          .bg-3 {
+              margin-top: 8%;
+              background: #b8a5a0; /* Dark Blue */
+              color: black;
+              font-size: 1.5rem;
+              line-height: 4.0rem;
+              width: 90%;
+
+              
+          }
+
+          .bg-4 {
+/*              background-color: al; */
+              color: black;
+              font-size: 1.5rem;
+              line-height: 4.0rem;
+              width: 100%;
+/*              background-color: transparent;*/
+            
+          }
+          
+          
+          .bg-4 a:link a:visited a:hover{
+              text-decoration: none;
+          }
+          
+          
+/*          To limit the number of columns in project section*/
+        @media (min-width: 576px) {
+            .card-columns {
+                column-count: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .card-columns {
+              margin-right: 55px;
+              margin-left: 65px;
+
+                column-count: 2;
+
+            }
+        }
+
+        @media (min-width: 992px) {
+            .card-columns {
+                column-count: 2;
+                              margin-right: 55px;
+              margin-left: 65px;
+
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .card-columns {
+              margin-right: 55px;
+              margin-left: 65px;
+
+                column-count: 2;
+            }
+        }          
+          
+          
+          .margin{
+              margin-bottom: 45px;
+          }
+          
+          
+          .bg-6{
+/*              width:80%;*/
+          }
+          
+                
+/*          carousel effect*/
+          
+      .carousel-fade .carousel-inner .item {
+            opacity: 0;
+            transition-property: opacity;
+        }
+        .carousel-fade .carousel-inner .active {
+            opacity: 1;
+        }
+        .carousel-fade .carousel-inner .active.left,
+        .carousel-fade .carousel-inner .active.right {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+        .carousel-fade .carousel-inner .next.left,
+        .carousel-fade .carousel-inner .prev.right {
+            opacity: 1;
+        }
+        .carousel-fade .carousel-control {
+            z-index: 2;
+        }
+        @media all and (transform-3d),
+        (-webkit-transform-3d) {
+            .carousel-fade .carousel-inner > .item.next,
+            .carousel-fade .carousel-inner > .item.active.right {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            .carousel-fade .carousel-inner > .item.prev,
+            .carousel-fade .carousel-inner > .item.active.left {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            .carousel-fade .carousel-inner > .item.next.left,
+            .carousel-fade .carousel-inner > .item.prev.right,
+            .carousel-fade .carousel-inner > .item.active {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .item:nth-child(1) {
+            background: url(Photos/430H.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .item:nth-child(2) {
+            background: url(Photos/224H.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .item:nth-child(3) {
+            background: url(Photos/46H.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .carousel {
+            z-index: -99;
+        }
+        .carousel .item {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+/*        Education card*/
+          .card {
+            box-shadow: 0 4px 8px 0 white;
+            transition: 0.3s;
+            margin-right: 4%;
+            background-color: white;
+
+              color:black;
+            
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 white;
+        }
+          
+          
+
+          .card-text {
+              padding: 15px 15px 15px 15px;
+          }
+          
+          
+          .scroll{
+              height:200px;
+              overflow-y: scroll;
+/*              transition: opacity 0.2s linear;*/
+          }
+          .bg-7{
+              background-color: black;
+              color: black;
+              height: 50px;
+          }
+          
+          .bg-7 a:link a:visited a:hover{
+              text-decoration: none;
+          }
+          .panel-footer{
+              background-color:black;
+              border-color: black;
+              color: #FFFFFF;
+
+             }
+          
+          #buttonEducation, #buttonS, #buttonW{
+/*              	background: -moz-linear-gradient(top,  #267c99 50%, #007299 50%); /* FF3.6+ */
+/*                background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#267c99), color-stop(50%,#007299)); /* Chrome,Safari4+ */
+/*                background: -webkit-linear-gradient(top,  #267c99 50%,#007299 50%); /* Chrome10+,Safari5.1+ */
+/*                background: -o-linear-gradient(top,  #267c99 50%,#007299 50%); /* Opera 11.10+ */
+/*                background: -ms-linear-gradient(top,  #267c99 50%,#007299 50%); /* IE10+ */
+/*                background: linear-gradient(to bottom,  #267c99 50%,#007299 50%); /* W3C */
+/*                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267c99', endColorstr='#007299',GradientType=0 ); /* IE6-9 */
+                background-color: darkgoldenrod;
+                color: white;
+                border-radius: 0;
+                text-align: justify;
+                
+          }
+          
+          
+          .btn-primary
+          {
+              background-color: transparent;
+              border-style: solid;
+              border-color: darkgoldenrod;
+              border-width: 1.5px;
+              color: black;
+              text-decoration: none;
+              margin-top: 10px;
+              margin-left: 10px;
+          }
+          
+          .colorNav{
+/*
+              background-color: #0268A6;
+              color:#0268A6;
+*/
+              border-radius: 0;
+              border: none;
+          }
+          
+/*          Animation*/
+          
+        @keyframes topFadeOut {
+        0% {
+        position: relative;
+        top: -10rem;
+        opacity: 0;
+        }
+
+        75% {
+        position: relative;
+        top: 25%;
+        opacity: 1;
+        }
+
+        100% {
+        opacity: 0;
+        }
+        }
+
+      </style>
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-inverse colorNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+              <a class="navbar-brand" href="#">AT</a>
+
+          </div>
+          
+          
+        <div class="collapse navbar-collapse navigation" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">  <a href="#" onclick="divVisibility('card3')">About</a></li>
+            <li> <a href="#" onclick="divVisibility('card1')">Education</a></li>
+            <li><a href="#proj">Projects</a></li>
+              <li> <a href="#" onclick="divVisibility('card2')">Skills</a></li>
+<!--              <li> <a href="#" onclick="divVisibility('card3')">Work Experience</a></li>-->
+              <li> <a href="#connect">Connect</a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=1C5npSQKQw_dSKEhPMSfD_9_MnxqUAa5R" download>Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+      
+<!--      <div class="container-fluid bg-0" style="z-index: 3;background-color: tan;">-->
+<!--                  <img src="Photos/224H.jpg">-->
+
+<!--
+      <div class="carousel slide carousel-fade" data-ride="carousel">
+
+             Wrapper for slides 
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                </div>
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
+-->
+<!--      </div>-->
+
+        <div class="container bg-6 text-center">           
+        <div class="row">
+        <div class="col-sm-4">
+          <div class="card card-block text-justify diffcolor" id="card1" style="width: 30rem;max-height: 40rem;display: none;position: absolute;z-index: 2;">
+                <div class="card-header">
+                    <button type="button" id = "buttonEducation" class="btn btn-lg btn-block">
+                        <img src="Photos/if_student_309036.png"  alt="Education" style="width:20px;height:20px;margin-right: 20px;">
+                        Education</button>
+                    </div>
+                    <div class="card-text" >
+                        <p style="padding-left: 40px;"> <b>Master's Degree</b> <br>
+                        <font size="2.0rem"><i>University of Southern California<br>
+                            Viterbi School of Engineering<br>
+                            Major: Computer Science</i></font>
+                        </p>
+                        <p style="padding-left: 40px;"><b>Bachelor's Degree</b>
+                            <font size="2.0rem"><br><i>University of Pune<br>
+                                DY Patil Institute of Engineering<br>
+                                Major: Computer Science</i></font></p>
+
+                    </div>
+              
+            
+              <div class="footer" ></div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card card-block diffcolor" id="card2" style="width: 30rem;min-height: 30rem;display: none;position: absolute;z-index: 2;">
+                <div class="card-header">
+                    <button type="button" id = "buttonS" class="btn btn-lg btn-block">
+                    <img src="Photos/if_ic_settings_48px_352095.png"  alt="Skills" style="width:20px;height:20px;margin-right: 20px;">
+
+                        Skills</button>
+                    </div>
+                    <div class="card-text" >
+<!--
+                        <p>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px; color: white;">Python</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">HTML</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">CSS</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">C/ C++</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">SQL</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Qlikview</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Javascript</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Bootstrap</span>
+                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+                        </p>
+
+
+-->
+                        <p><button type="button" class="btn btn-primary">Python</button>
+                            <button type="button" class="btn btn-primary">HTML</button>
+                            <button type="button" class="btn btn-primary">CSS</button>
+                            <button type="button" class="btn btn-primary">C/C++</button>
+                            <button type="button" class="btn btn-primary">SQL</button>
+                            <button type="button" class="btn btn-primary">Linux</button>
+                            <button type="button" class="btn btn-primary">Qlikview</button>
+                            <button type="button" class="btn btn-primary">JavaScript</button>
+                            <button type="button" class="btn btn-primary">Bootstrap</button>
+                            <button type="button" class="btn btn-primary">Tensorflow</button>
+                    </div>
+            </div>
+            </div>
+        <div class="col-sm-4">
+          <div class="card card-block diffcolor" id="card3" style="width: 30rem;min-height: 30rem;display: none;position: absolute;z-index:2;">
+                <div class="card-header">
+                    <button type="button" id = "buttonW" class="btn  btn-lg btn-block">
+                    <img src="Photos/if_user_female2_172622.png"  alt="About Me" style="width:20px;height:20px;margin-right: 10px;">
+
+                        About Me</button>
+                    </div>
+                    <div class="card-text" >
+                        <p>I am a graduate student at University of Southern California. I find joy in coding and love discussing topics related to programming. I have worked on a variety of projects based on Deep Learning, Operating System and Web Technologies. In my free time, I like learning and exploring new technologies. If there is anything related to programming or software development that you would like to discuss, feel free to <a href="#connect">contact me</a>.
+                        
+                        </p>
+                    </div>
+            
+
+            </div>
+            </div>
+        </div>
+        </div>
+      
+
+        <div class="container-fluid bg-1 text-center ">
+        <img src="Photos/myImage.JPG" class="img-responsive img-circle margin" style="display:inline-block" alt="Akanksha">
+        </div>
+
+        <div class="container-fluid bg-2 text-center">
+            <p class="Name">Akanksha Tyagi</p>
+            <hr>
+            <p class="Intro">SOFTWARE ENGINEER, <a href="https://www.portal.mu-sigma.com/msu/DecisionScientistCertificate/6567-Aug2016-69371.html" target="_blank">DECISION SCIENTIST</a></p>
+          </div>
+      
+<!--About me section      -->
+<!--
+        <div class="container-fluid bg-3 text center">
+        <h3 id="aboutme">ABOUT ME</h3>
+            <hr style="width:80%;">
+        <div class="row">
+        <div class="col-xs-7 col-lg-10 col-lg-offset-1 col-xs-offset-2">
+          <p>I am a graduate student at University of Southern California. I find joy in coding and love discussing topics related to programming. I have worked on a variety of projects based on Deep Learning, Operating System and Web Technologies. In my free time, I like learning and exploring new technologies. If there is anything related to programming or software development that you would like to discuss, feel free to <a href="#connecr">contact me</a>. 
+            </p>
+          </div>
+        </div>
+      </div>
+      
+-->
+<!--Project Section      -->
+
+      
+          <div class="container-fluid bg-4 margin " id="proj">
+              <h3> PROJECTS </h3>
+              <hr STYLE="width: 80%;">
+          <div class="card-columns margin " style="display: inline-block;column-break-inside: avoid;">
+              
+              
+          <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
+            <div class="card-block  scroll">
+              <h4 class="card-title">Digital Nano Bricks</h4>
+                <p class="card-text ">
+                    This is one of my favorite projects. It was aimed at helping the client hyper-personalize their offerings to millennials. We started by gathering data from different social media profiles, preprocessed it, analyzed it to learn about customer behavior. We also built a world listening engine to capture recent trends among millennials and used it to further identification of millennials on social media. I also worked on designing Support Vectore Machine to separate millennials from non-millennials. Using this module, we were able to identify 150,000 millennials. The nature of relationship between two customers and the relationship between customer and recent trends were represented using Neo4j graph.</p>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Python</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">MapReduce</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Neo4j</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Social Media Analytics</span>
+
+                  
+            </div>
+          </div>
+
+          <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
+            <div class="card-block ">
+              <h4 class="card-title">Weenix Operating System</h4>
+                <p class="card-text">Weenix is a linux-based operating system. Worked towards implementing kernel threads and processes along with synchronization primitives, Virtual File System, Virtual Memory System. </p>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">C</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
+                  
+            </div>
+          </div>
+
+          <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
+<!--            <img class="card-img-top img-fluid" src="Photos/result_ae_with_pose.png" alt="Card image cap">-->
+            <div class="card-block  scroll">
+              <h4 class="card-title">Multi View Image Generation</h4>
+              <p class="card-text">The objective of this project was to generate synthetic view from a given 2D image as input. Created three models to achieve the goal, namely Autoencoder, Autoencoder with Pose, Autoencoder with adversarial Training.</p>
+            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Code</a>
+            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Blog</a>
+                <br>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;text-align: left;">Python</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Deep Learning</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+
+
+                  
+            </div>
+          </div>
+
+        <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
+            <div class="card-block  scroll">
+              <h4 class="card-title">Image Classification</h4>
+                <p class="card-text">Designed a Convolutional Neural Network to classify images present in CIFAR-10 dataset. Utilized Batch Normalization and SoftMax Cross Entropy Loss to improve the accuracy. </p>
+            <a href="https://github.com/akankshaty/Deep-Learning/tree/master/Assignment1" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Code</a>
+                <br>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Python</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+                  
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+            <table class="table table-hover">
+            <thead>
+            <tr>
+<!--            <th>#</th>-->
+            <th style="width:20%;text-align: center;">Project Name</th>
+            <th style="width:40%;text-align: center;">Description</th>
+            <th style="width:20%;text-align: center;">Technologies</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+<!--            <th scope="row">1</th>-->
+            <td>Digital Nano Bricks</td>
+            <td>This is one of my favorite projects. It was aimed at helping the client hyper-personalize their offerings to millennials. We started by gathering data from different social media profiles, preprocessed it, analyzed it to learn about customer behavior. We also built a world listening engine to capture recent trends among millennials and used it to further identification of millennials on social media. I also worked on designing Support Vectore Machine to separate millennials from non-millennials. Using this module, we were able to identify 150,000 millennials. The nature of relationship between two customers and the relationship between customer and recent trends were represented using Neo4j graph.
+            </td>
+            <td>                
+            <p>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Python</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Linux</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">MapReduce</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Neo4j</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Social Media Analytics</span>
+                </p>
+            </td>
+            </tr>
+            <tr>
+<!--            <th scope="row">2</th>-->
+            <td>Weenix Operating System</td>
+            <td>Weenix is a linux-based operating system. Worked towards implementing kernel threads and processes along with synchronization primitives, Virtual File System, Virtual Memory System. </td>
+            <td>                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">C</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
+            </td>
+            </tr>
+            <tr>
+<!--            <th scope="row">3</th>-->
+            <td>Multi View Image Generation</td>
+            <td>The objective of this project was to generate synthetic view from a given 2D image as input. Created three models to achieve the goal, namely Autoencoder, Autoencoder with Pose, Autoencoder with adversarial Training.</td>
+                <td>            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Code</a>
+            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Blog</a>
+                <br>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;text-align: left;">Python</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Deep Learning</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+
+                </td>
+            </tr>
+                
+                
+                <tr>
+                    <td>Image Classification</td>
+                    <td>Designed a Convolutional Neural Network to classify images present in CIFAR-10 dataset. Utilized Batch Normalization and SoftMax Cross Entropy Loss to improve the accuracy.</td>
+                    <td>                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Python</span>
+                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+</td>
+                </tr>
+            </tbody>
+            </table>
+          
+          <div class="container-fluid bg-7">
+              <div class="panel-footer" id="connect">
+              
+                  <p> <a href="https://www.linkedin.com/in/akanksha-tyagi-900b16a3/" target="_blank">LinkedIn</a> | 
+                      <a href="https://github.com/akankshaty" target="_blank">Github</a> | 
+                      <a href="mailto:akankshatyagi18@gmail.com?" target="_blank" style="color:white;">Email</a> |
+                      <a href="https://www.facebook.com/aksy18" target="_blank" >Facebook</a></p>
+              </div>
+          </div>  
+      
+      
+          
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

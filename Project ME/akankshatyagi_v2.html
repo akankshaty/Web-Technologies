@@ -9,6 +9,8 @@
     <meta name="author" content="">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+          <link rel="import" href="projects.html">
+
 
 
 
@@ -133,8 +135,8 @@
           }
           .bg-3 {
               margin-top: 8%;
-              background: #b8a5a0; /* Dark Blue */
-              color: black;
+              background-color: darkgoldenrod; 
+              color: white;
               font-size: 1.5rem;
               line-height: 4.0rem;
               width: 90%;
@@ -142,6 +144,11 @@
               
           }
 
+          .table{
+              background-color: antiquewhite;
+              letter-spacing: 0.2rem;
+          }
+          
           .bg-4 {
 /*              background-color: al; */
               color: black;
@@ -307,20 +314,29 @@
 /*              transition: opacity 0.2s linear;*/
           }
           .bg-7{
-              background-color: black;
+              background-color: none;
+              border: solid 2px;
               color: black;
               height: 50px;
+              width: 30%;
+              padding: 10px 4px 4px 10px;
           }
           
           .bg-7 a:link a:visited a:hover{
               text-decoration: none;
           }
+          
           .panel-footer{
               background-color:black;
               border-color: black;
               color: #FFFFFF;
 
              }
+          
+          .bg-8{
+              width: 100%;
+              background-color: black;
+          }
           
           #buttonEducation, #buttonS, #buttonW{
 /*              	background: -moz-linear-gradient(top,  #267c99 50%, #007299 50%); /* FF3.6+ */
@@ -364,13 +380,13 @@
         @keyframes topFadeOut {
         0% {
         position: relative;
-        top: -10rem;
+        top: -20rem;
         opacity: 0;
         }
 
-        75% {
+        65% {
         position: relative;
-        top: 25%;
+        top: 10%;
         opacity: 1;
         }
 
@@ -402,19 +418,15 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active">  <a href="#" onclick="divVisibility('card3')">About</a></li>
             <li> <a href="#" onclick="divVisibility('card1')">Education</a></li>
-            <li><a href="#proj">Projects</a></li>
+            <li><a href="#table1">Projects</a></li>
               <li> <a href="#" onclick="divVisibility('card2')">Skills</a></li>
-<!--              <li> <a href="#" onclick="divVisibility('card3')">Work Experience</a></li>-->
-              <li> <a href="#connect">Connect</a></li>
+<!--              <li> <a href="#connect">Connect</a></li>-->
             <li><a href="https://drive.google.com/uc?export=download&id=1C5npSQKQw_dSKEhPMSfD_9_MnxqUAa5R" download>Resume</a></li>
           </ul>
         </div>
       </div>
     </nav>
       
-      
-<!--      <div class="container-fluid bg-0" style="z-index: 3;background-color: tan;">-->
-<!--                  <img src="Photos/224H.jpg">-->
 
 <!--
       <div class="carousel slide carousel-fade" data-ride="carousel">
@@ -468,22 +480,6 @@
                         Skills</button>
                     </div>
                     <div class="card-text" >
-<!--
-                        <p>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px; color: white;">Python</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">HTML</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">CSS</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">C/ C++</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">SQL</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Qlikview</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Javascript</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Bootstrap</span>
-                            <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
-                        </p>
-
-
--->
                         <p><button type="button" class="btn btn-primary">Python</button>
                             <button type="button" class="btn btn-primary">HTML</button>
                             <button type="button" class="btn btn-primary">CSS</button>
@@ -516,6 +512,7 @@
             </div>
         </div>
         </div>
+
       
 
         <div class="container-fluid bg-1 text-center ">
@@ -526,6 +523,15 @@
             <p class="Name">Akanksha Tyagi</p>
             <hr>
             <p class="Intro">SOFTWARE ENGINEER, <a href="https://www.portal.mu-sigma.com/msu/DecisionScientistCertificate/6567-Aug2016-69371.html" target="_blank">DECISION SCIENTIST</a></p>
+            
+          <div class="container-fluid bg-7">
+                  <p> <a href="https://www.linkedin.com/in/akanksha-tyagi-900b16a3/" target="_blank" style="color:black;">LinkedIn</a> | 
+                      <a href="https://github.com/akankshaty" target="_blank" style="color:black;">Github</a> | 
+                      <a href="mailto:akankshatyagi18@gmail.com?" target="_blank" style="color:black;">Email</a> |
+                      <a href="https://www.facebook.com/aksy18" target="_blank" style="color:black;" >Facebook</a></p>
+          </div>  
+      
+
           </div>
       
 <!--About me section      -->
@@ -542,91 +548,29 @@
       </div>
       
 -->
-<!--Project Section      -->
-
       
-          <div class="container-fluid bg-4 margin " id="proj">
-              <h3> PROJECTS </h3>
-              <hr STYLE="width: 80%;">
-          <div class="card-columns margin " style="display: inline-block;column-break-inside: avoid;">
-              
-              
-          <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
-            <div class="card-block  scroll">
-              <h4 class="card-title">Digital Nano Bricks</h4>
-                <p class="card-text ">
-                    This is one of my favorite projects. It was aimed at helping the client hyper-personalize their offerings to millennials. We started by gathering data from different social media profiles, preprocessed it, analyzed it to learn about customer behavior. We also built a world listening engine to capture recent trends among millennials and used it to further identification of millennials on social media. I also worked on designing Support Vectore Machine to separate millennials from non-millennials. Using this module, we were able to identify 150,000 millennials. The nature of relationship between two customers and the relationship between customer and recent trends were represented using Neo4j graph.</p>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Python</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">MapReduce</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Neo4j</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Social Media Analytics</span>
+<!--      <hr style="width: 100%;">-->
+      <div class="container-fluid bg-3">
+          <h3>Projects</h3>
+      </div>
 
-                  
-            </div>
-          </div>
-
-          <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
-            <div class="card-block ">
-              <h4 class="card-title">Weenix Operating System</h4>
-                <p class="card-text">Weenix is a linux-based operating system. Worked towards implementing kernel threads and processes along with synchronization primitives, Virtual File System, Virtual Memory System. </p>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">C</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
-                  
-            </div>
-          </div>
-
-          <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
-<!--            <img class="card-img-top img-fluid" src="Photos/result_ae_with_pose.png" alt="Card image cap">-->
-            <div class="card-block  scroll">
-              <h4 class="card-title">Multi View Image Generation</h4>
-              <p class="card-text">The objective of this project was to generate synthetic view from a given 2D image as input. Created three models to achieve the goal, namely Autoencoder, Autoencoder with Pose, Autoencoder with adversarial Training.</p>
-            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Code</a>
-            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Blog</a>
-                <br>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;text-align: left;">Python</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Deep Learning</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
-
-
-                  
-            </div>
-          </div>
-
-        <div class="card margin"style="display: inline-block;column-break-inside: avoid;">
-            <div class="card-block  scroll">
-              <h4 class="card-title">Image Classification</h4>
-                <p class="card-text">Designed a Convolutional Neural Network to classify images present in CIFAR-10 dataset. Utilized Batch Normalization and SoftMax Cross Entropy Loss to improve the accuracy. </p>
-            <a href="https://github.com/akankshaty/Deep-Learning/tree/master/Assignment1" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Code</a>
-                <br>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Python</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
-                  
-            </div>
-          </div>
-
-        </div>
-    </div>
-
-            <table class="table table-hover">
+      <table class="table table-bordered table-hover scrollable" style="margin-left: 5%; width:90%;height: 300px;border:solid darkgoldenrod;" id="table1">
             <thead>
             <tr>
-<!--            <th>#</th>-->
-            <th style="width:20%;text-align: center;">Project Name</th>
-            <th style="width:40%;text-align: center;">Description</th>
-            <th style="width:20%;text-align: center;">Technologies</th>
+            <th style="width:20%;text-align: center;background-color: antiquewhite;">Project Name</th>
+            <th style="width:40%;text-align: center;background-color: antiquewhite;">Description</th>
+            <th style="width:20%;text-align: center;background-color: antiquewhite;">Technologies</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-<!--            <th scope="row">1</th>-->
-            <td>Digital Nano Bricks</td>
+            <td >Digital Nano Bricks</td>
             <td>This is one of my favorite projects. It was aimed at helping the client hyper-personalize their offerings to millennials. We started by gathering data from different social media profiles, preprocessed it, analyzed it to learn about customer behavior. We also built a world listening engine to capture recent trends among millennials and used it to further identification of millennials on social media. I also worked on designing Support Vectore Machine to separate millennials from non-millennials. Using this module, we were able to identify 150,000 millennials. The nature of relationship between two customers and the relationship between customer and recent trends were represented using Neo4j graph.
             </td>
             <td>                
             <p>
                 <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Python</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Linux</span>
+                <span style="position: relative;border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Linux</span>
                 <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">MapReduce</span>
                 <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Neo4j</span>
                 <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Social Media Analytics</span>
@@ -637,20 +581,20 @@
 <!--            <th scope="row">2</th>-->
             <td>Weenix Operating System</td>
             <td>Weenix is a linux-based operating system. Worked towards implementing kernel threads and processes along with synchronization primitives, Virtual File System, Virtual Memory System. </td>
-            <td>                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">C</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Linux</span>
+            <td>                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">C</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Linux</span>
             </td>
             </tr>
             <tr>
 <!--            <th scope="row">3</th>-->
             <td>Multi View Image Generation</td>
             <td>The objective of this project was to generate synthetic view from a given 2D image as input. Created three models to achieve the goal, namely Autoencoder, Autoencoder with Pose, Autoencoder with adversarial Training.</td>
-                <td>            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Code</a>
-            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Blog</a>
+                <td>            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Code</a>
+            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Blog</a>
                 <br>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;text-align: left;">Python</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Deep Learning</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;text-align: left;">Python</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Deep Learning</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Tensorflow</span>
 
                 </td>
             </tr>
@@ -659,20 +603,23 @@
                 <tr>
                     <td>Image Classification</td>
                     <td>Designed a Convolutional Neural Network to classify images present in CIFAR-10 dataset. Utilized Batch Normalization and SoftMax Cross Entropy Loss to improve the accuracy.</td>
-                    <td>                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Python</span>
-                <span style="border:1px solid white;padding: 4px 4px 4px 4px;color: white;">Tensorflow</span>
+                    <td>                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Python</span>
+                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Tensorflow</span>
 </td>
                 </tr>
             </tbody>
-            </table>
+            </table>      
+      
+
+
           
-          <div class="container-fluid bg-7">
-              <div class="panel-footer" id="connect">
+          <div class="container-fluid bg-8">
+              <div  class="panel-footer" id="connect">
               
-                  <p> <a href="https://www.linkedin.com/in/akanksha-tyagi-900b16a3/" target="_blank">LinkedIn</a> | 
-                      <a href="https://github.com/akankshaty" target="_blank">Github</a> | 
+                  <p> <a href="https://www.linkedin.com/in/akanksha-tyagi-900b16a3/" target="_blank" style="color:white;">LinkedIn</a> | 
+                      <a href="https://github.com/akankshaty" target="_blank" style="color:white;">Github</a> | 
                       <a href="mailto:akankshatyagi18@gmail.com?" target="_blank" style="color:white;">Email</a> |
-                      <a href="https://www.facebook.com/aksy18" target="_blank" >Facebook</a></p>
+                      <a href="https://www.facebook.com/aksy18" target="_blank" style="color:white;" >Facebook</a></p>
               </div>
           </div>  
       

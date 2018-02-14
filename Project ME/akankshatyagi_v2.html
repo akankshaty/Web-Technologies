@@ -9,14 +9,13 @@
     <meta name="author" content="">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-          <link rel="import" href="projects.html">
+        <link rel="shortcut icon" href="/favicon.png" type="image/png">
+        <link rel="shortcut icon" type="image/png" href="Photos/myImage.JPG">
 
 
 
 
     <title>Personal Homepage - Akanksha Tyagi</title>
-<!--
--->
     <script>       
         function divVisibility(divId) {
             var x = document.getElementById(divId);
@@ -56,8 +55,8 @@
       <style>
           html,
             body {
-                background-color: white;
-/*                background-image: linear-gradient(to right,#3773ff, #37ffc3);*/
+                background-color: antiquewhite;
+/*                background-image: linear-gradient(to right,#a4c7c6, #a4c7c6);*/
 /*                background-repeat: no-repeat;*/
 /*                background-blend-mode: color-burn;*/
 /*                    #D7E1EB;*/
@@ -135,7 +134,7 @@
           }
           .bg-3 {
               margin-top: 8%;
-              background-color: darkgoldenrod; 
+              background-color: #75a1c7; 
               color: white;
               font-size: 1.5rem;
               line-height: 4.0rem;
@@ -145,7 +144,7 @@
           }
 
           .table{
-              background-color: antiquewhite;
+              background-color: none;
               letter-spacing: 0.2rem;
           }
           
@@ -346,7 +345,7 @@
 /*                background: -ms-linear-gradient(top,  #267c99 50%,#007299 50%); /* IE10+ */
 /*                background: linear-gradient(to bottom,  #267c99 50%,#007299 50%); /* W3C */
 /*                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267c99', endColorstr='#007299',GradientType=0 ); /* IE6-9 */
-                background-color: darkgoldenrod;
+                background-color: #75a1c7;
                 color: white;
                 border-radius: 0;
                 text-align: justify;
@@ -358,7 +357,7 @@
           {
               background-color: transparent;
               border-style: solid;
-              border-color: darkgoldenrod;
+              border-color: #75a1c7;
               border-width: 1.5px;
               color: black;
               text-decoration: none;
@@ -395,13 +394,22 @@
         }
         }
 
+          
+          .project_skill{
+              border:1.5px solid #75a1c7;
+              padding: 5px 5px 5px 5px;
+              color: #75a1c7;
+              display: inline-block;
+              margin-bottom: 10px;
+          }
+          
       </style>
   </head>
 
   <body>
 
 
-    <nav class="navbar navbar-inverse colorNav">
+    <nav class="navbar navbar-inverse colorNav" id="Top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
@@ -525,10 +533,14 @@
             <p class="Intro">SOFTWARE ENGINEER, <a href="https://www.portal.mu-sigma.com/msu/DecisionScientistCertificate/6567-Aug2016-69371.html" target="_blank">DECISION SCIENTIST</a></p>
             
           <div class="container-fluid bg-7">
+              
+              <p>Reach out to me at: <u><a href="mailto:akankshatyagi18@gmail.com?" target="_blank" style="color:black;">akankshatyagi18@gmail.com</a></u></p>
+<!--
                   <p> <a href="https://www.linkedin.com/in/akanksha-tyagi-900b16a3/" target="_blank" style="color:black;">LinkedIn</a> | 
                       <a href="https://github.com/akankshaty" target="_blank" style="color:black;">Github</a> | 
                       <a href="mailto:akankshatyagi18@gmail.com?" target="_blank" style="color:black;">Email</a> |
                       <a href="https://www.facebook.com/aksy18" target="_blank" style="color:black;" >Facebook</a></p>
+-->
           </div>  
       
 
@@ -554,12 +566,12 @@
           <h3>Projects</h3>
       </div>
 
-      <table class="table table-bordered table-hover scrollable" style="margin-left: 5%; width:90%;height: 300px;border:solid darkgoldenrod;" id="table1">
+      <table class="table table-bordered table-hover scrollable" style="margin-left: 5%; width:90%;height: 300px;border:solid #75a1c7;" id="table1">
             <thead>
             <tr>
-            <th style="width:20%;text-align: center;background-color: antiquewhite;">Project Name</th>
-            <th style="width:40%;text-align: center;background-color: antiquewhite;">Description</th>
-            <th style="width:20%;text-align: center;background-color: antiquewhite;">Technologies</th>
+            <th style="width:10%;text-align: center;background-color: #b2e3ff;">Project Name</th>
+            <th style="width:40%;text-align: center;background-color: #b2e3ff;">Description</th>
+            <th style="width:30%;text-align: center;background-color: #b2e3ff;">Technologies</th>
             </tr>
             </thead>
             <tbody>
@@ -568,34 +580,41 @@
             <td>This is one of my favorite projects. It was aimed at helping the client hyper-personalize their offerings to millennials. We started by gathering data from different social media profiles, preprocessed it, analyzed it to learn about customer behavior. We also built a world listening engine to capture recent trends among millennials and used it to further identification of millennials on social media. I also worked on designing Support Vectore Machine to separate millennials from non-millennials. Using this module, we were able to identify 150,000 millennials. The nature of relationship between two customers and the relationship between customer and recent trends were represented using Neo4j graph.
             </td>
             <td>                
-            <p>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Python</span>
-                <span style="position: relative;border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">Linux</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;margin: 5px 5px 5px 5px;">MapReduce</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Neo4j</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Social Media Analytics</span>
-                </p>
+            
+                <div class="tools">
+                <span class="project_skill">Python</span>
+                <span  class="project_skill">Linux</span>
+                <span  class="project_skill">MapReduce</span>
+                <span class="project_skill">Neo4j</span>
+                <span  class="project_skill">Social Media Analytics</span>
+                </div>
             </td>
             </tr>
             <tr>
 <!--            <th scope="row">2</th>-->
             <td>Weenix Operating System</td>
             <td>Weenix is a linux-based operating system. Worked towards implementing kernel threads and processes along with synchronization primitives, Virtual File System, Virtual Memory System. </td>
-            <td>                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">C</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Linux</span>
+            <td>                <span class="project_skill">C</span>
+                <span class="project_skill">Linux</span>
             </td>
             </tr>
             <tr>
 <!--            <th scope="row">3</th>-->
             <td>Multi View Image Generation</td>
             <td>The objective of this project was to generate synthetic view from a given 2D image as input. Created three models to achieve the goal, namely Autoencoder, Autoencoder with Pose, Autoencoder with adversarial Training.</td>
-                <td>            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Code</a>
-            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Blog</a>
+                
+                
+                <td>
+                    
+            <div class="tools">
+        
+            <a href="https://github.com/Chinmay26/Multi-Viewpoint-Image-generation" target="_blank" class="project_skill" style="text-decoration: none;color: #75a1c7;">Code</a>
+            <a href="https://medium.com/@akankshatyagi18/multi-view-image-generation-c0bbb476579d" target="_blank" class="project_skill" style="text-decoration: none;color: #75a1c7;">Blog</a>
                 <br>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;text-align: left;">Python</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Deep Learning</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Tensorflow</span>
-
+                <span class="project_skill">Python</span>
+                <span class="project_skill">Deep Learning</span>
+                <span class="project_skill">Tensorflow</span>
+                    </div>
                 </td>
             </tr>
                 
@@ -603,9 +622,15 @@
                 <tr>
                     <td>Image Classification</td>
                     <td>Designed a Convolutional Neural Network to classify images present in CIFAR-10 dataset. Utilized Batch Normalization and SoftMax Cross Entropy Loss to improve the accuracy.</td>
-                    <td>                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Python</span>
-                <span style="border:1px solid black;padding: 4px 4px 4px 4px;color: black;">Tensorflow</span>
-</td>
+                    <td>                
+                        
+                <div class="tools">
+        
+                <span class="project_skill">Python</span>
+                <span class="project_skill">Tensorflow</span>
+
+                </div>
+                </td>
                 </tr>
             </tbody>
             </table>      
@@ -619,8 +644,12 @@
                   <p> <a href="https://www.linkedin.com/in/akanksha-tyagi-900b16a3/" target="_blank" style="color:white;">LinkedIn</a> | 
                       <a href="https://github.com/akankshaty" target="_blank" style="color:white;">Github</a> | 
                       <a href="mailto:akankshatyagi18@gmail.com?" target="_blank" style="color:white;">Email</a> |
-                      <a href="https://www.facebook.com/aksy18" target="_blank" style="color:white;" >Facebook</a></p>
+                      <a href="https://www.facebook.com/aksy18" target="_blank" style="color:white;" >Facebook</a>
+                    <a href="#Top" style="color:white;float:right;" >Top</a> </p>
+
               </div>
+              
+
           </div>  
       
       

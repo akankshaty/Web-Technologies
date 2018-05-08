@@ -1,0 +1,142 @@
+@media (min-width: 576px) {
+    .main {
+        margin-top: 10%;
+    }
+    
+    .card-text{
+        visibility: hidden;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        margin-top: -0%;
+    }
+    .card-text{
+        visibility: hidden;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .main {
+        margin-top: -0%;
+    }
+    .card-text{
+        visibility: visible;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .main {
+        margin-top: -0%;
+    }
+        .card-text{
+        visibility: visible;
+    }
+
+}          
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+html,body{
+    background-color: black;
+    height: 100%;
+
+}
+
+.cardmain {
+        max-height:95vh;
+
+/*        display: inline-block;*/
+}
+
+.card{
+        background-color: ghostwhite;
+    
+}
+.main{
+    width: 100%;
+}
+
+.margins{
+    padding: 5% 5% 5% 5%;
+}
+
+
+.main-img{
+        margin-top: -4%;
+        max-height: 70vh;
+        max-width: 100%;
+}
+
+.nav{
+    margin-top: 0.5%;
+/*    margin-bottom: 1%;*/
+}
+
+.nav-item{
+    padding-left: 2%;
+}
+
+/*
+.projectsTab{
+            max-height: 95vh;
+
+}
+*/
+
+/* Visit https://nicolaskadis.info/projects/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation */
+
+/* for demo purposes */
+.margin-projects {
+  margin: 10px 10px;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+/*
+.projectsCard{
+    max-width: 30%;
+    
+}
+*/

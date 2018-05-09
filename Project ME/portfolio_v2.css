@@ -77,25 +77,39 @@ html,body{
 }
 
 .margins{
-    padding: 5% 5% 5% 5%;
+    padding: 5% 5% 0 5%;
 }
 
 
 .main-img{
         margin-top: -4%;
-        max-height: 70vh;
+        max-height: 65vh;
         max-width: 100%;
+}
+
+.container-tab{
+    background-color: ghostwhite;
 }
 
 .about-me{
     font-size: 1rem;
-    letter-spacing: 0.03rem;
+}
+
+.about-me-footer{
+    background-color:black;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color:white;
+}
+
+.about-me-footer a{
+        color:white;
 }
 
 .title-about-me{
     margin-top:0.5%;
     font-size: 1rem;
-    letter-spacing: 0.12rem;
+    letter-spacing: 0.1rem;
 }
 
 
@@ -125,26 +139,18 @@ padding: 0 0 0 0;
 }
 
 .title{
-/*    color: #17a2b8;*/
     color: white;
-    margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     font-size: 1.2rem;
     letter-spacing: 0.04em;
 }
-
-/*
-.exp-work{
-margin-left: 2rem;    
-}
-*/
 
 .btn.nohover:hover {
     cursor:default !important;
 }
 
 .skills a{
-/*    background-color:#17a2b8 ;*/
     color: #36363c;
     border: solid #36363c 1px; 
     margin: 1% 1% 1% 1%;
@@ -152,4 +158,8 @@ margin-left: 2rem;
 
 .position{
     font-size: 0.8rem;
+}
+
+#nav-exp{
+    padding-top: 1rem;
 }

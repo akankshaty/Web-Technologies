@@ -32,9 +32,9 @@
         <div class="container main">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                        <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="false">Projects</a>
-                        <a class="nav-item nav-link" id="nav-experience-tab" data-toggle="tab" href="#nav-exp" role="tab" aria-controls="nav-exp" aria-selected="false" >Experience</a>
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" onclick="changeColor(id)" style="background-color: #17a2b8; border:#17a2b8;color:white;">Home</a>
+                        <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="false" onclick="changeColor(id)">Projects</a>
+                        <a class="nav-item nav-link" id="nav-experience-tab" data-toggle="tab" href="#nav-exp" role="tab" aria-controls="nav-exp" aria-selected="false" onclick="changeColor(id)">Experience</a>
 <!--                        <a class="nav-item nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</a>-->
                     </div>
                 </nav>
@@ -62,7 +62,7 @@
               <div class="row">
                   <div class="row col-md-12 offset-md-1">
                     <div class="card col-md-4 projects-card-left projects-card">
-                        <img src="Photos/hw8_front.PNG" class="card-img-top img-fluid ">
+                        <img src="Photos/hw8_front.PNG" class="img-thumbnail">
                     </div>
                       
                     <div class="card col-md-5 projects-card bg-light">
@@ -85,7 +85,7 @@
                         <div class="card-body projects-desc bg-light">
                         Built a CNN model to classify images present in CIFAR-10 dataset.
                         <br>
-                        <a href="#" class="btn btn-secondary" role="button">Code</a>
+                        <a href="https://github.com/akankshaty/Deep-Learning/blob/master/Assignment1/Problem_2.ipynb" target="_blank" class="btn btn-secondary" role="button">Code</a>
                         </div>
 
                     </div>

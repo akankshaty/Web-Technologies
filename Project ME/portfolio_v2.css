@@ -68,10 +68,6 @@ html,body{
         max-height:95vh;
 }
 
-.card{
-        background-color: ghostwhite;
-    
-}
 .main{
     width: 100%;
 }
@@ -163,3 +159,22 @@ padding: 0 0 0 0;
 #nav-exp{
     padding-top: 1rem;
 }
+
+.img-thumbnail{
+    float:none;
+    margin: 0 auto;
+}
+
+.card{
+    border:none;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:link a:active a:visited a:hover{
+    color:white;
+}
+

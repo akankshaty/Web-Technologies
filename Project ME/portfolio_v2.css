@@ -3,9 +3,11 @@
         margin-top: 10%;
     }
     
-    .card-text{
+/*
+    .projects-desc{
         visibility: hidden;
     }
+*/
 }
 
 
@@ -13,9 +15,11 @@
     .main {
         margin-top: -0%;
     }
-    .card-text{
+/*
+    .projects-desc{
         visibility: hidden;
     }
+*/
 
 }
 
@@ -23,9 +27,11 @@
     .main {
         margin-top: -0%;
     }
-    .card-text{
+/*
+    .projects-desc{
         visibility: visible;
     }
+*/
     
 }
 
@@ -33,12 +39,15 @@
     .main {
         margin-top: -0%;
     }
-        .card-text{
+/*
+        .projects-desc{
         visibility: visible;
     }
+*/
 
 }          
 
+/*
 .card-columns {
   @include media-breakpoint-only(lg) {
     column-count: 4;
@@ -47,17 +56,16 @@
     column-count: 5;
   }
 }
+*/
 
 html,body{
-    background-color: black;
+    background-color: #36363c;
     height: 100%;
 
 }
 
 .cardmain {
         max-height:95vh;
-
-/*        display: inline-block;*/
 }
 
 .card{
@@ -79,64 +87,69 @@ html,body{
         max-width: 100%;
 }
 
+.about-me{
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+}
+
+.title-about-me{
+    margin-top:0.5%;
+    font-size: 1rem;
+    letter-spacing: 0.12rem;
+}
+
+
+
 .nav{
     margin-top: 0.5%;
-/*    margin-bottom: 1%;*/
 }
 
 .nav-item{
     padding-left: 2%;
 }
 
-/*
-.projectsTab{
-            max-height: 95vh;
 
-}
-*/
-
-/* Visit https://nicolaskadis.info/projects/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation */
-
-/* for demo purposes */
-.margin-projects {
-  margin: 10px 10px;
+.projects-card{
+margin-top: 2rem;
+margin-left: 2rem;
+padding: 0 0 0 0;
 }
 
-/* Flip Cards CSS */
-.card-container {
-  display: grid;
-  perspective: 700px;
+.card-header{
+    color: white;
+    font-size: 1rem;
 }
 
-.card-flip {
-  display: grid;
-  grid-template: 1fr / 1fr;
-  grid-template-areas: "frontAndBack";
-  transform-style: preserve-3d;
-  transition: all 0.7s ease;
+.projects-desc{
+    font-size: 1rem;
 }
 
-.card-flip div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-
-.front {
-  grid-area: frontAndBack;
-}
-
-.back {
-  grid-area: frontAndBack;
-  transform: rotateY(-180deg);
-}
-
-.card-container:hover .card-flip {
-  transform: rotateY(180deg);
+.title{
+/*    color: #17a2b8;*/
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
 }
 
 /*
-.projectsCard{
-    max-width: 30%;
-    
+.exp-work{
+margin-left: 2rem;    
 }
 */
+
+.btn.nohover:hover {
+    cursor:default !important;
+}
+
+.skills a{
+/*    background-color:#17a2b8 ;*/
+    color: #36363c;
+    border: solid #36363c 1px; 
+    margin: 1% 1% 1% 1%;
+}
+
+.position{
+    font-size: 0.8rem;
+}

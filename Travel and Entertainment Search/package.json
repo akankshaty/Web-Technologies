@@ -1,0 +1,22 @@
+{
+  "name": "hw8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "@google/maps": "^0.4.6",
+    "express": "^4.16.3",
+    "moment": "^2.22.0",
+    "npm": "^5.6.0",
+    "rateyo": "^2.3.3",
+    "request": "^2.85.0",
+    "yelp-fusion": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

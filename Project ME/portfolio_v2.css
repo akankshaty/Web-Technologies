@@ -178,3 +178,10 @@ padding: 0 0 0 0;
     color:white;
 }
 
+.title a{
+    color:bisque;
+}
+
+.title a:hover{
+    color:bisque;
+}
